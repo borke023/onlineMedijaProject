@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <title>Kontaktirajte me! | Boris Bulovan</title>
+</head>
+<body>
+    <section class="hero-sec kontakt-page">
+        <nav class="nav-bar">
+            <div class="nav-container">
+                <div class="links">
+                    <a href="home.html" class="nav-link">Početna</a>
+                    <a href="kontakt.html" class="nav-link">Kontakt</a>
+                    <a href="galerija.html" class="nav-link">Galerija</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="hero-contetn">
+            <h1 class="hero-title">Kontaktirajte me</h1>
+            <div class="hero-subtitle">Popunjavanjem forme ili na email:<br> bulovan.boris@gmail.com</div>
+            <div class="btn-wrapper">
+                <a href="#kontakt-forma" class="hero-btn">Idi na formu</a>
+            </div>
+        </div>
+
+        <!-- Interaktivno dugme sa leve strane -->
+        <div class="interactiv-button-wrapper">
+            <a href="https://www.facebook.com/" id="dugme2" class="button-link1 pomereno" target="_blank"><img src="./assets/fb.png"></a>
+            <a href="https://www.instagram.com/" id="dugme3" class="button-link2 pomereno" target="_blank"><img src="./assets/insta.png"></a>
+            <a href="https://twitter.com/" id="dugme4" class="button-link3 pomereno" target="_blank"><img src="./assets/twitter.png"></a>
+            <div onclick="prikaziDugme()" id="dugme1" class="interactiv-button">
+                <div class="button-line-1"></div>
+                <div class="button-line-2"></div>
+            </div>
+        </div>
+        <div id="particles-js" class="particles"></div>
+    </section>
+
+    <div class="default-section light wf-section">
+        <div class="form-container">
+          <div class="title-wrapper">
+            <h1 class="section-title">Kontakt forma</h1>
+            <div class="devider"></div>
+            <div class="section-subtitle">Pošaljite mi poruku</div>
+          </div>
+          <div class="forma">
+            <form id="kontakt-forma" name="kontakt-forma" method="get">
+                <label for="ime-prezime" class="form-label">Ime i Prezime</label>
+                <input type="text" class="field" maxlength="50" name="ime-prezime" placeholder="Vaše ime i prezime" id="ime-prezime" required>
+                <label for="email" class="form-label">Email adresa</label>
+                <input type="email" class="field" maxlength="50" name="email" placeholder="primer@primer.com" id="email" required>
+                <label for="Telefon" class="form-label">Broj telefona</label>
+                <input type="tel" class="field" maxlength="256" name="Telefon" placeholder="(+123) 45 67891234 " id="Telefon">
+                <label for="Naslov-poruke" class="form-label">Naslov</label>
+                <input type="text" class="field" maxlength="256" name="Naslov-poruke" placeholder="Naslov vase poruke" id="Naslov-poruke" required>
+                <label for="Poruka" class="form-label">Vasa Poruka</label>
+                <textarea id="Poruka" name="Poruka" maxlength="1000"  placeholder="Napisite nam sta mislite" required class="txt-area"></textarea>
+                <div class="btn-wrapper">
+                <input class="submit" type="button" value="Send Email" onclick="sendEmail()">
+                </div>
+            </form>
+          </div>
+        </div>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="./js/sendEmail.js"></script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="./js/particles.js"></script>
+<script src="./js/interactions.js"></script>
+</body>
+</html>

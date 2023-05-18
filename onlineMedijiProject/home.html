@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <title>Boris Bulovan | Početna</title>
+</head>
+<body>
+<!--Sekcija 1: HERO SEKCIJA-->
+    <section class="hero-sec">
+        <nav class="nav-bar">
+            <div class="nav-container">
+                <div class="links">
+                    <a href="home.html" class="nav-link">Početna</a>
+                    <a href="#omeni" class="nav-link">O meni</a>
+                    <a href="kontakt.html" class="nav-link">Kontakt</a>
+                    <a href="galerija.html" class="nav-link">Galerija</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="hero-contetn">
+            <h1 class="hero-title">Ja sam Boris Bulovan</h1>
+            <div class="hero-subtitle">Bavim se fotografijom!</div>
+            <div class="btn-wrapper">
+                <a href="#omeni" class="hero-btn">Saznaj više!</a>
+            </div>
+        </div>
+
+        <!-- Interaktivno dugme sa leve strane -->
+        <div class="interactiv-button-wrapper">
+            <a href="https://www.facebook.com/" id="dugme2" class="button-link1 pomereno" target="_blank"><img src="./assets/fb.png"></a>
+            <a href="https://www.instagram.com/" id="dugme3" class="button-link2 pomereno" target="_blank"><img src="./assets/insta.png"></a>
+            <a href="https://twitter.com/" id="dugme4" class="button-link3 pomereno" target="_blank"><img src="./assets/twitter.png"></a>
+            <div onclick="prikaziDugme()" id="dugme1" class="interactiv-button">
+                <div class="button-line-1"></div>
+                <div class="button-line-2"></div>
+            </div>
+        </div>
+        <div id="particles-js" class="particles"></div>
+    </section>
+
+<!--Sekcija 2-->
+
+<section class="default-section bg-light">
+    <div class="container">
+        <h1 class="section-title">Usavrsavam se u</h1>
+        <div class="devider"></div>
+        <div class="section-subtitle">oblasti fotografije, editovanja fotografije i kreiranja pejzaža prirode i životinja</div>
+    </div>
+    
+    <div class="showcase-wrapper">
+        <div class="item"><img src="./assets/customer (1).png" loading="lazy" width="60" alt="customer-icon">
+          <div class="award-title">Zadovoljnih klijenata</div>
+          <div class="counter" data-target="456"></div>
+        </div>
+        <div class="item"><img src="./assets/medal (1).png" loading="lazy" width="60" alt="medal-icon">
+          <div class="award-title">Postignutih nagrada</div>
+          <div class="counter" data-target="140"></div>
+        </div>
+        <div class="item"><img src="./assets/hourglass (1).png" loading="lazy" width="60" alt="hourglass-icon">
+          <div class="award-title">sati iskustva</div>
+          <div class="counter" data-target="270"></div>
+        </div>
+        <div class="item"><img src="./assets/git (1).png" loading="lazy" width="60" alt="git-icon">
+          <div class="award-title">Završenih projekata</div>
+          <div class="counter" data-target="101"></div>
+        </div>
+      </div>
+</section>
+<!-- Ne radi brojanje za sada moram da fixam-->
+
+<!-- Sekcija 3-->
+<section id="omeni" class="default-section bg-light">
+    <div class="container">
+      <div class="title-wrapper">
+        <h1 class="section-title">Nešto više o meni</h1>
+        <div class="devider"></div>
+        <div class="section-subtitle">Ko sam ja i čime se bavim?</div>
+      </div>
+    <div class="kolone">
+        <div class="kolona1">
+          <p class="text-omeni">Dragi posetioc, dobrodošli! Moje ime je Boris Bulovan i živim u prelepom gradu Zrenjaninu. <br><br>Ja sam profesionalni fotograf sa višegodišnjim iskustvom u ovoj oblasti.U mom poslu, najviše uživam u tome što mogu da uhvatim posebne trenutke i stvorim uspomene koje će trajati zauvek. Kroz moje fotografije, volim da prikažem lepotu sveta i da zabeležim neponovljive trenutke.<br><br>U toku svoje karijere, imao sam privilegiju da sarađujem sa mnogim klijentima i da radim na različitim projektima, od portreta do pejzažnih fotografija. Trudim se da svakom klijentu pružim individualni pristup i da ih upoznam što bolje kako bih mogao da stvorim fotografije koje će najbolje odgovarati njihovim potrebama.<br><br>Na ovom sajtu, možete videti neke od mojih najboljih fotografija i projekata na kojima sam radio. Nadam se da će vam se dopasti i da ćete uživati u pregledanju mojih radova.<br><br>Hvala vam što ste posetili moj sajt, i nadam se da ćemo imati priliku da sarađujemo u budućnosti.</p>
+        </div>
+          <div class="kolona2">
+            <a href="#" class="card-wrapper">
+              <div class="gradient-overlay"></div>
+              <div class="border-overlay">
+                <div class="text-wrapper">
+                  <h3 class="card-heading">Galerija</h3>
+                  <div class="card-caption-text">Pogledaj jos!</div>
+                </div>
+              </div>
+            </a>
+
+            <a href="instagram.com" class="card-wrapper sec">
+              <div class="gradient-overlay"></div>
+              <div class="border-overlay">
+                <div class="text-wrapper">
+                  <h3 class="card-heading">instagram</h3>
+                  <div class="card-caption-text">Zaprati me!</div>
+                </div>
+              </div>
+            </a>
+        </div>
+    </div>
+  </div>
+</section>  
+<section class="default-section bg-light">
+  <div class="container">
+    <div class="title-wrapper">
+      <h1 class="section-title">Generator slika</h1>
+      <div class="devider"></div>
+      <div class="section-subtitle">Pritisni dugme i svaki put ocekuj novu sliku!</div>
+    </div>
+    <div id="generate-img-wrapper"><img id="photo" class="img" width="1200" height="600" alt="" loading="lazy"></div>
+    <div class="btn-wrapper">
+      <button id="new-photo-btn" class="hero-btn dark">Generisi</button>
+  </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-flex">
+    <p class="footer-text">Copyright © 2023. Sva Prava Zadržava Boris Bulovan</p>
+    <div class="socials-footer">
+      <div class="footer-icon"><a  href="https://www.facebook.com/" target="_blank"><img class="footer-img" src="./assets/fb.png" alt="facebook"></a></div>
+      <div class="footer-icon"><a  href="https://www.instagram.com/" target="_blank"><img class="footer-img"  src="./assets/insta.png" alt="facebook"></a></div>
+      <div class="footer-icon"><a  href="https://twitter.com/" target="_blank"><img class="footer-img"  src="./assets/twitter.png" alt="facebook"></a></div>
+    </div>
+  </div>
+</footer>
+
+<!-- Sve skripte-->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="./js/particles.js"></script>
+    <script src="./js/interactions.js"></script>
+    <script src="./js/counterup.js"></script>
+    <script src="./js/generatorSlika.js"></script>
+    <script src="./js/mouseMove.js"></script>
+</body>
+</html>
